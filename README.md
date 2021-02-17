@@ -49,11 +49,11 @@ https://github.com/pykaldi/pykaldi
 
 Или
 
-`$ docker pull docker.pkg.github.com/sergeyshk/speech-to-text-russian/stt-ru:0.1.0`
+`$ docker pull ghcr.io/sergeyshk/stt-ru:0.2.0`
 
 2. Создать docker-том для работы с внешними данными:
 
-`$ docker volume create -d local -o o=bind -o device=[DIR] asr_volume`
+`$ docker volume create -d local -o type=none -o o=bind -o device=[DIR] asr_volume`
 
 3. Запустить docker-контейнер:
 

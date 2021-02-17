@@ -23,7 +23,6 @@ RUN pip install --upgrade pip \
 	soundfile
 
 # Копирование файлов проекта
-RUN mkdir speech_recognition	
 WORKDIR speech_recognition
 RUN echo "cat motd" >> /root/.bashrc
 COPY . ./
